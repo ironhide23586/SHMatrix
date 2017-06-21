@@ -2,3 +2,44 @@
 A neat C++ custom Matrix class to perform super-fast GPU (or CPU) powered Matrix/Vector computations with minimal code, leveraging the power of cuBLAS where applicable (Python Interface in the works).
 
 Relevant DLL files (etc.) contained in the "package" folder for respective platforms
+
+### Example usage for performing a Matrix-Matrix Dot Product & an element-wise add on the GPU- 
+
+```c++
+#include <vector>
+#include <iostream>
+
+#include "SHMatrix.h"
+
+using namespace std;
+
+int main() {
+  cublasHandle_t cublasHandle;
+  CublasSafeCall(cublasCreate_v2(&cublasHandle));
+  
+  SHMatrix a(cublasHandle, std::vector<int> { 3, 5 }, GPU);
+  a.GaussianInit(); //Initializing a 3x5 matrix with random numbers from gaussian distribution.
+  a.Print();
+
+  SHMatrix b(cublasHandle, std::vector<int> { 7, 5 }, GPU);
+  b.UniformInit(); //Initializing a 3x5 matrix with random numbers from uniform distribution.
+  b.Print();
+  b.T(); //Performing in-place lazy-transpose to change dimensions to 5x7.
+
+  SHMatrix c(cublasHandle, std::vector<int> { 3, 3 }, GPU); //SHMatrix to store dot-product results.
+
+  SHMatrix::Dot(cublasHandle, a, b, c); //Performing dot-product on GPU.
+  c.Print();
+
+  c.Move2CPU();
+  SHMatrix::Dot(cublasHandle, a, b, c); //Performing dot-product on CPU.
+  c.Print()
+  
+  a += b; In-place matrix-matrix add operation (b is added to a) on GPU.
+  a.Print();
+  
+  a.Move2CPU();
+  a += b; In-place matrix-matrix add operation (b is added to a) on CPU.
+  a.Print();
+}
+```
