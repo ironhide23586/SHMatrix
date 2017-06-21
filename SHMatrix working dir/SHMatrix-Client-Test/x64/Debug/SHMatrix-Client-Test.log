@@ -1,0 +1,20 @@
+﻿Build started 6/21/2017 4:01:59 PM.
+     1>Project "D:\Users\monst\Desktop\SHMatrix\SHMatrix-Client-Test\SHMatrix-Client-Test.vcxproj" on node 2 (Build target(s)).
+     1>InitializeBuildStatus:
+         Touching "x64\Debug\SHMatrix.9427660B.tlog\unsuccessfulbuild".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /ID:\Users\monst\Desktop\SHMatrix\SHMatrix /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix-Client-Test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" cudart.lib cublas.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix-Client-Test.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix-Client-Test.lib" /MACHINE:X64 x64\Debug\main.obj
+         D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix.lib
+         SHMatrix-Client-Test.vcxproj -> D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix-Client-Test.exe
+         SHMatrix-Client-Test.vcxproj -> D:\Users\monst\Desktop\SHMatrix\x64\Debug\SHMatrix-Client-Test.pdb (Full PDB)
+       FinalizeBuildStatus:
+         Deleting file "x64\Debug\SHMatrix.9427660B.tlog\unsuccessfulbuild".
+         Touching "x64\Debug\SHMatrix.9427660B.tlog\SHMatrix-Client-Test.lastbuildstate".
+     1>Done Building Project "D:\Users\monst\Desktop\SHMatrix\SHMatrix-Client-Test\SHMatrix-Client-Test.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.46
