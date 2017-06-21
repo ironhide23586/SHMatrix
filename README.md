@@ -35,6 +35,8 @@ int main() {
   SHMatrix::Dot(cublasHandle, a, b, c); //Performing dot-product on CPU.
   c.Print()
   
+  b.T(); //Changing dimensions to 3x5 for element-wise operations with a.
+  
   a += b; //In-place matrix-matrix add operation (b is added to a) on GPU.
   a.Print();
   
