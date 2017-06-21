@@ -35,11 +35,11 @@ int main() {
   SHMatrix::Dot(cublasHandle, a, b, c); //Performing dot-product on CPU.
   c.Print()
   
-  a += b; In-place matrix-matrix add operation (b is added to a) on GPU.
+  a += b; //In-place matrix-matrix add operation (b is added to a) on GPU.
   a.Print();
   
   a.Move2CPU();
-  a += b; In-place matrix-matrix add operation (b is added to a) on CPU.
+  a += b; //In-place matrix-matrix add operation (b is added to a) on CPU.
   a.Print();
 }
 ```
