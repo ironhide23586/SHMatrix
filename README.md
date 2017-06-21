@@ -21,10 +21,10 @@ int main() {
   a.GaussianInit(); //Initializing a 3x5 matrix with random numbers from gaussian distribution.
   a.Print();
 
-  SHMatrix b(cublasHandle, std::vector<int> { 7, 5 }, GPU);
+  SHMatrix b(cublasHandle, std::vector<int> { 3, 5 }, GPU);
   b.UniformInit(); //Initializing a 3x5 matrix with random numbers from uniform distribution.
   b.Print();
-  b.T(); //Performing in-place lazy-transpose to change dimensions to 5x7.
+  b.T(); //Performing in-place lazy-transpose to change dimensions to 5x3.
 
   SHMatrix c(cublasHandle, std::vector<int> { 3, 3 }, GPU); //SHMatrix to store dot-product results.
 
