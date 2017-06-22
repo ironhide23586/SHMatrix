@@ -16,7 +16,7 @@ using namespace std;
 int main() {
   cublasHandle_t cublasHandle;
   CublasSafeCall(cublasCreate_v2(&cublasHandle));
-  
+
   SHMatrix a(cublasHandle, std::vector<int> { 3, 5 }, GPU);
   a.GaussianInit(); //Initializing a 3x5 matrix with random numbers from gaussian distribution.
   a.Print();
@@ -33,13 +33,13 @@ int main() {
 
   c.Move2CPU();
   SHMatrix::Dot(cublasHandle, a, b, c); //Performing dot-product on CPU.
-  c.Print()
-  
+  c.Print();
+
   b.T(); //Changing dimensions to 3x5 for element-wise operations with a.
-  
+
   a += b; //In-place matrix-matrix add operation (b is added to a) on GPU.
   a.Print();
-  
+
   a.Move2CPU();
   a += b; //In-place matrix-matrix add operation (b is added to a) on CPU.
   a.Print();
