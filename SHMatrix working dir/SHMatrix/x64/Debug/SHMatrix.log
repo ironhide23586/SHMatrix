@@ -1,11 +1,11 @@
-﻿Build started 6/21/2017 4:08:16 PM.
+﻿Build started 6/21/2017 8:06:38 PM.
      1>Project "D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix\SHMatrix.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
          Creating "x64\Debug\SHMatrix.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
        AddCudaCompileDeps:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_DEBUG /D_WINDOWS /D_USRDLL /DSHMATRIX_EXPORTS /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix\SHMatrix.cpp" 
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
        AddCudaCompileDeps:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\cl.exe /E /nologo /showIncludes /TP /D__CUDACC__ /D_DEBUG /D_WINDOWS /D_USRDLL /DSHMATRIX_EXPORTS /D_WINDLL /D_UNICODE /DUNICODE /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /I. /FIcuda_runtime.h /c "D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix\SHMatrix.cu" 
+       Skipping target "AddCudaCompileDeps" because all output files are up-to-date with respect to the input files.
        AddCudaCompilePropsDeps:
        Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
        AddCudaCompilePropsDeps:
@@ -19,11 +19,7 @@
        Skipping target "CudaBuildCore" because all output files are up-to-date with respect to the input files.
      1>Done Building Project "D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix\SHMatrix.vcxproj" (CudaBuildCore target(s)).
      1>Link:
-         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\lib\x64" cudart.lib cudnn.lib cublas.lib curand.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.lib" /MACHINE:X64 /DLL x64\Debug\SHMatrix.cpp.obj
-         x64\Debug\SHMatrix.cu.obj
-            Creating library D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.lib and object D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.exp
-     1>SHMatrix.cu.obj : warning LNK4099: PDB 'vc140.pdb' was not found with 'SHMatrix.cu.obj' or at 'D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\vc140.pdb'; linking object as if no debug info
-     1>SHMatrix.cpp.obj : warning LNK4099: PDB 'vc140.pdb' was not found with 'SHMatrix.cpp.obj' or at 'D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\vc140.pdb'; linking object as if no debug info
+         All outputs are up-to-date.
          SHMatrix.vcxproj -> D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.dll
          SHMatrix.vcxproj -> D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\x64\Debug\SHMatrix.pdb (Full PDB)
        FinalizeBuildStatus:
@@ -33,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:02.44
+Time Elapsed 00:00:00.29

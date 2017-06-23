@@ -1,7 +1,7 @@
-﻿Build started 6/21/2017 4:08:19 PM.
+﻿Build started 6/21/2017 8:06:38 PM.
      1>Project "D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix-Client-Test\SHMatrix-Client-Test.vcxproj" on node 2 (Build target(s)).
      1>InitializeBuildStatus:
-         Creating "x64\Debug\SHMatrix.9427660B.tlog\unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "x64\Debug\SHMatrix.9427660B.tlog\unsuccessfulbuild".
        ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"D:\Users\monst\Desktop\SHMatrix\SHMatrix working dir\SHMatrix" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v8.0\include" /ZI /nologo /W3 /WX- /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
          main.cpp
@@ -17,4 +17,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.54
+Time Elapsed 00:00:03.33
