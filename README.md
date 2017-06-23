@@ -50,7 +50,7 @@ int main() {
 }
 ```
 
-### 1. Class Methods -
+### 1. Class Methods (details coming soon..) -
 #### 1.1 __Constructors-__
   1.1.1
   ```c++
