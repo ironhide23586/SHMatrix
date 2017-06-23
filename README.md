@@ -50,7 +50,8 @@ int main() {
 ### Class Methods -
 __Constructors-__
 
-  * ```c++ SHMatrix(const cublasHandle_t &cublas_handle_arg,
-       float *mat_data, std::vector<int> &dims,
-       mem_location = GPU);
+  * ```c++ 
+    SHMatrix(const cublasHandle_t &cublas_handle_arg,
+             float *mat_data, std::vector<int> &dims,
+             mem_location = GPU);
     ```
