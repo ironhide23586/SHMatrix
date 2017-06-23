@@ -122,3 +122,79 @@ int main() {
   ```c++
   void CommitScale();
   ```
+
+#### 1.3 __Static Public Methods__
+  1.3.1
+  ```c++
+  void Dot(cublasHandle_t cublas_handle, SHMatrix &A, SHMatrix &B, SHMatrix &C);
+  ```
+  1.3.2
+  ```c++
+  float* DataPointerAtLoc(SHMatrix& arg, mem_location desired_loc);
+  ```
+  1.3.3
+  ```c++
+  float GetGaussianNum(float mean, float stddev);
+  ```
+  1.3.4
+  ```c++
+  float GetUniformNum(float lower, float higher);
+  ```
+  
+#### 1.4 __Public Properties__
+  1.4.1
+  ```c++
+  float *data;
+  ```
+  1.4.2
+  ```c++
+  float scalar;
+  ```
+  1.4.3
+  ```c++
+  mem_location data_loc;
+  ```
+  1.4.4
+  ```c++
+  std::vector<int> data_dims;
+  ```
+  1.4.5
+  ```c++
+  std::string name;
+  ```
+  1.4.6
+  ```c++
+  float mean;
+  ```
+  1.4.7
+  ```c++
+  float mini;
+  ```
+  1.4.8
+  ```c++
+  float maxi;
+  ```
+  1.4.9
+  ```c++
+  bool allocated;
+  ```
+  1.4.10
+  ```c++
+  int rows;
+  ```
+  1.4.11
+  ```c++
+  int cols;
+  ```
+  1.4.12
+  ```c++
+  int num_elems;
+  ```
+  1.4.13
+  ```c++
+  float mini_idx;
+  ```
+  1.4.14
+  ```c++
+  float maxi_idx;
+  ```
