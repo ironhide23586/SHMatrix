@@ -46,4 +46,9 @@ int main() {
   a.Print();
 }
 ```
-Alt-H2 Class Methods -
+
+### Class Methods -
+__Constructors-__
+..* *SHMatrix(const cublasHandle_t &cublas_handle_arg,
+              float *mat_data, std::vector<int> &dims,
+              mem_location = GPU); -*
