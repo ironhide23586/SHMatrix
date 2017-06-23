@@ -1,4 +1,7 @@
 # SHMatrix
+
+![alt-text]:https://fontmeme.com/permalink/170623/a7c127d73d853b8b11305b59b7042df9.png
+
 A neat C++ custom Matrix class to perform super-fast GPU (or CPU) powered Matrix/Vector computations with minimal code, leveraging the power of cuBLAS where applicable (Python Interface in the works).
 
 Relevant DLL files (etc.) contained in the "package" folder for respective platforms. More details coming soon...
