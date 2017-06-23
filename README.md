@@ -4,7 +4,7 @@ A neat C++ custom Matrix class to perform super-fast GPU (or CPU) powered Matrix
 Relevant DLL files (etc.) contained in the "package" folder for respective platforms. More details coming soon...
 
 ### Example usage for performing a Matrix-Matrix Dot Product & an element-wise add on the GPU- 
-#####This only shows the += operation, similar pattern can be used for +, *, - operations between SHMatrix objects or floats (any way) on CPU or GPU.
+This only shows the += operation, similar pattern can be used for +, *, - operations between SHMatrix objects or floats (any way) on CPU or GPU.
 
 ```c++
 #include <vector>
