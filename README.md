@@ -66,3 +66,59 @@ int main() {
   SHMatrix(const cublasHandle_t &cublas_handle_arg,
            SHMatrix &src_shmatrix, mem_location = GPU);
   ```
+  
+#### 1.2 __Non-static Public Methods__
+  1.2.1
+  ```c++
+  void Equate(SHMatrix &src_shmatrix);
+  ```
+  1.2.2
+  ```c++
+  void Reallocate(std::vector<int> &dims, mem_location mem_loc = GPU,
+                  bool copy_original = false, bool default_init = false,
+                  float init_val = 0.0f);
+  ```
+  1.2.3
+  ```c++
+  void Print(bool print_elem = true);
+  ```
+  1.2.4
+  ```c++
+  void Move2GPU();
+  ```
+  1.2.5
+  ```c++
+  void Move2CPU();
+  ```
+  1.2.6
+  ```c++
+  Clear();
+  ```
+  1.2.7
+  ```c++
+  void GaussianInit(float mean = 0.0f, float stddev = 0.1f);
+  ```
+  1.2.8
+  ```c++
+  void UniformInit(float lower = -0.5f, float higher = 0.5f);
+  ```
+  1.2.9
+  ```c++
+  SHMatrix& T();
+  ```
+  1.2.10
+  ```c++
+  SHMatrix& Scale(float scale_arg);
+  ```
+  1.2.11
+  ```c++
+  void CommitUnaryOps();
+  ```
+  1.2.12
+  ```c++
+  void CommitTranspose();
+  ```
+  1.2.13
+  ```c++
+  void CommitScale();
+  ```
