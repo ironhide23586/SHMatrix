@@ -46,3 +46,4 @@ int main() {
   a.Print();
 }
 ```
+Alt-H2 Class Methods -
