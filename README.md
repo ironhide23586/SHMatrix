@@ -49,9 +49,20 @@ int main() {
 
 ### 1. Class Methods -
 #### 1.1 __Constructors-__
-  1.1.1 
+  1.1.1
   ```c++
   SHMatrix(const cublasHandle_t &cublas_handle_arg,
            float *mat_data, std::vector<int> &dims,
            mem_location = GPU);
+  ```
+  1.1.2
+  ```c++
+  SHMatrix(const cublasHandle_t &cublas_handle_arg,
+           std::vector<int> &dims, mem_location = GPU,
+           bool default_init = false, float init_val = 0.0f);
+  ```
+  1.1.3
+  ```c++
+  SHMatrix(const cublasHandle_t &cublas_handle_arg,
+           SHMatrix &src_shmatrix, mem_location = GPU);
   ```
