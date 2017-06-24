@@ -4,6 +4,9 @@
 
 A neat C++ custom Matrix class to perform super-fast GPU (or CPU) powered Matrix/Vector computations with minimal code, leveraging the power of cuBLAS where applicable (Python Interface in the works).
 
+Tested on -> Windows 10, NVIDIA GTX 1070 (notebook), CUDA 8.0 (with cuDNN v5.0), C++11, Intel Core i7-6700HQ 2.6 GHz
+Compiled with Visual Studio 2015
+
 ## Relevant DLL files (etc.) contained in the "package" folder for respective platforms. More details coming soon...
 
 ### Example usage for performing a Matrix-Matrix Dot Product & an element-wise add on the GPU- 
